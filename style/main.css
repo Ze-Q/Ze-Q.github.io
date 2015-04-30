@@ -1,0 +1,408 @@
+/*main.css*/
+
+body,
+input,
+.ui.input input,
+button,
+textarea {
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(../images/black-linen.png), repeat-x, repeat;
+  color: white;
+  font-size: 16px;
+}
+
+.montserrat,
+.montserrat.bold {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat.bold{
+  font-weight: 700;
+}
+
+.lato {
+  font-family: 'Lato', 'Helvetica Neue Light', 'Helvetica', sans-serif !important;
+}
+
+.ui.message ul.list li:before {
+  content: "" !important;
+}
+
+.ui.menu .logo.item {
+  float: left;
+}
+
+.ui.hack.button {
+  box-shadow: none;
+  border: 2px solid rgb(35,177,150);
+  color: rgb(35,177,150);
+  background: none;
+  min-width: 288px;
+  width: 30%;
+}
+
+.ui.hack.button.completed {
+  background: rgb(35, 177, 150);
+  color: white;
+}
+
+.ui.hack.button:hover {
+  background: rgb(35, 177, 150);
+  color: white;
+}
+
+::selection {
+  color:rgba(255,255,255,1);
+  background:rgba(57,61,66,.7);
+}
+
+::-moz-selection {
+  color:rgba(255,255,255,1);
+  background:rgba(57,61,66,.7);
+}
+
+.bg-overlay {
+  content:'';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-linear-gradient(to bottom right,#229CFF ,#00AA77 );
+  background-image: -moz-linear-gradient(to bottom right,#229CFF ,#00AA77 );
+  background-image: -o-linear-gradient(to bottom right,#229CFF ,#00AA77 );
+  background-image: -ms-linear-gradient(to bottom right,#229CFF ,#00AA77 );
+  background-image: linear-gradient(to bottom right,#229CFF ,#00AA77 );
+  opacity: .8;
+}
+
+section {
+  position: relative;
+  height: 100%;
+  padding: 80px 0;
+}
+
+
+section.content {
+  height: 100%;
+}
+
+/*main section*/
+
+section#main{
+  padding: 0;
+  min-height: 100vh;
+}
+
+section#main .ui.page.grid {
+  position:absolute;
+  width:100%;
+  height:50%;
+  top:25%;
+}
+
+.title {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 4em;
+  letter-spacing: 8px;
+}
+
+.tagline {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.05em;
+  letter-spacing: 1.7px;
+}
+
+.date,
+.location {
+  font-size: 1.05em;
+  letter-spacing: 1.7px;
+  margin-top:2px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.description {
+  margin-top: 35px;
+  font-size: 1.05em;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+button.outline{
+  font-size: 20px;
+  width: 320px;
+  border-radius:3px;
+  padding: 8px;
+  margin-top: 18px;
+  color: white;
+  background: transparent;
+  border: solid white 2px;
+  opacity:.75;
+  -webkit-transition: color 500ms, background 500ms;
+  -moz-transition: color 500ms, background 500ms;
+  -o-transition: color 500ms, background 500ms;
+  -ms-transition: color 500ms, background 500ms;
+  transition: color 500ms, background 500ms;
+}
+
+button.outline:hover {
+  background: white;
+  cursor: pointer;
+}
+
+button.outline.green:hover{
+  color: #00AA77;
+}
+
+button.outline.red:hover{
+  color: rgb(106,60,57)
+}
+button.outline:focus {
+  outline: 0;
+}
+
+/* INFO PANEL */
+
+section#info {
+  background: rgba(255,255,255,.85);
+  min-height: 240px;
+  text-align: center;
+  color: black;
+  padding: 100px 16px;
+}
+
+  #info .info-title{
+    font-family: 'Montserrat', 'Helvetica Neue','Helvetica', 'Arial', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    font-size: 4em;
+    color: rgb(56,153,179);
+  }
+
+  #info .info-description{
+    width: 70%;
+    margin: 30px auto;
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+
+#profile-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    width: 20%;
+    height: 20%;
+}
+
+
+/* skills & projects section */
+section#skills,
+section#projects{
+  padding: 80px 0;
+}
+
+#skills .skills-title,
+#projects .projects-title{
+    text-align: center;
+    font-family: 'Montserrat', 'Helvetica Neue','Helvetica', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    margin-bottom: 80px;
+}
+
+#skills .skills-type,
+#projects .projects-type{
+    font-family: 'Montserrat', 'Helvetica Neue','Helvetica', 'Arial', sans-serif;
+    font-size: 1.4em;
+}
+
+#skills .skills-item,
+#projects .projects-item{
+    line-height:1.4em;
+    padding-right: 10%;
+}
+
+/* internships section */
+section#internships,
+section#life{
+    background: rgba(255, 255, 255, .85);
+    min-height: 120px;
+    height: 20%;
+    text-align: center;
+    color: rgb(56,153,179);
+}
+
+#internships .internships-title,
+#life .life-title{
+    font-family: 'Montserrat', 'Helvetica Neue','Helvetica', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 3.2em;
+    margin-bottom: 40px;
+}
+
+#internships .internships-position,
+#life .life-aspect{
+    font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;;
+    font-size: 1.5em;
+    color:black;
+}
+
+#internships .internships-description-item,
+#life .life-aspect-item{
+    font-size: 1.2em;
+    line-height:2em;
+    color:black;
+}
+
+#life .life-aspect-item{
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 2%;
+}
+
+#internships .internships-message,
+#life .life-message{
+    margin-bottom: 5em;
+}
+
+#internships .internships-message:last-child,
+#life .life-message:last-child{
+    margin-bottom: 0;
+}
+
+
+/*progress bar*/
+#progress {
+	height:2%;
+    background:hsl(920, 100%, 50%);
+	bottom:0;
+	z-index:200;
+    position: fixed;
+    overflow: hidden;
+}
+
+.invisible {
+    display:none;
+}
+
+/* contact section */
+section#contact {
+  padding: 160px 0;
+  min-height: 60vh;
+  background: transparent;
+}
+
+section#contact a {
+    color: white;
+}
+
+section#contact .tagline {
+margin-bottom: 30px;
+}
+
+
+section#footer {
+  width: 100%;
+  padding: 24px 0;
+  background: rgba(0,0,0,.7);
+  min-height: 3em;
+  height: 60px;
+  text-align: center;
+  margin-top: -60px;
+}
+
+section#footer .icon:hover {
+  text-shadow: 0 0 3px white;
+  cursor: pointer;
+}
+
+a {
+    color: white;
+}
+
+/* Tablets */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+   section {
+    position: relative !important;
+    height: 100% !important;
+    min-height: 100% !important;
+  }
+
+  .ui.page.grid{
+    position: relative !important;
+    padding: 50px 0 !important;
+  }
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    
+  #profile-pic {
+    height: 50%;  
+    width: 50%;
+  }
+    
+  .ui.button {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+    
+  section {
+    position: relative !important;
+    height: 100% !important;
+    min-height: 100% !important;
+  }
+    
+  #main {
+    margin-bottom: 15%;
+  }
+
+  .ui.page.grid{
+    position: relative !important;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  .tagline {
+    font-size: .9em;
+  }
+
+  .button {
+    min-width: 15em !important;
+    width: 15em !important;
+  }
+
+  .info-title,
+  .skills-title,
+  .internships-title,
+  .projects-title{
+    font-size: 2em !important;
+  }
+    
+  #life .life-aspect-item{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+    
+  .internships-message{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
