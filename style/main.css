@@ -412,3 +412,8 @@ a {
     padding-right: 3%;
   }
 }
+
+#short-name {
+    color: rgb(56,153,179);
+    opacity: 0.5;
+}
